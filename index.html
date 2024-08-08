@@ -1,0 +1,1164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Thao Nguyen_Resume</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Updated: Jun 29 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+  <style>
+    .testimonial-item button {
+        background-color: #ffff;
+        border: 0px;
+        padding-top: 10px;
+        color: #149ddd;
+        font-style: italic;
+    }
+    /* Popup container */
+    .popup {
+      display: none; 
+      position: fixed;
+      z-index: 100000;
+      left: 280px;
+      top: 0px;
+      bottom:0px;
+      width: 80%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+
+    }
+
+    /* Popup content */
+    .popup-content {
+      background-color: #fefefe;
+      margin-top: 80px;
+      margin-left:80px;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* Close button */
+    .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+  <script>
+    function showPopup(popupId) {
+      document.getElementById(popupId).style.display = "block";
+    }
+
+    function closePopup(popupId) {
+      document.getElementById(popupId).style.display = "none";
+    }
+  </script>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+
+    <div class="profile-img">
+      <img src="assets/img/my-profile-img2.jpg" alt="" class="img-fluid rounded-circle">
+    </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <!-- <img src="assets/img/logo.png" alt=""> -->
+      <h1 class="sitename">Phương Thảo</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <!-- <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a> -->
+      <!-- <a href="thaodhy145@gmail.com" class="facebook"><i class="bi bi-envelop"></i></a> -->
+      <a href="www.linkedin.com/in/nguyenphuong-thao" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/phthao2003" class="instagram"><i class="bi bi-github"></i></a>
+      <a href="https://join.skype.com/invite/y8MNh8BRIhEU" class="google-plus"><i class="bi bi-skype"></i></a>
+      
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#awards"><i class="bi bi-hdd-stack navicon"></i> Awards</a></li>
+        <li><a href="index.html#activities"><i class="bi bi-people" style="margin-right: 10px;"></i> Activities</a></li>
+        <li><a href="index.html#testimonials"><i class="bi bi-menu-button navicon"></i> <span>Testimonials</span></a>
+        
+          <!-- <ul>
+            <li><a href="#">Dropdown 1</a></li>
+            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+              <ul>
+                <li><a href="#">Deep Dropdown 1</a></li>
+                <li><a href="#">Deep Dropdown 2</a></li>
+                <li><a href="#">Deep Dropdown 3</a></li>
+                <li><a href="#">Deep Dropdown 4</a></li>
+                <li><a href="#">Deep Dropdown 5</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Dropdown 2</a></li>
+            <li><a href="#">Dropdown 3</a></li>
+            <li><a href="#">Dropdown 4</a></li>
+          </ul> -->
+        </li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/hero-bg.jpg" alt="" data-aos="fade-in" class="">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+        <h2>Nguyễn Thị Phương Thảo</h2>
+        <br>
+        <h3 style="font-size: 45px; color: #b98a08;">Ivanka</h3>
+        <p>I'm <span class="typed" data-typed-items="Business Analyst, Freelancer">Business Analyst</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+        <p style="margin-bottom:60px">
+          <!-- I am passionate about applying technology to solve business challenges. <br> -->
+          As a Business Analyst, my guiding principle is to thoroughly understand clients' business needs and then design effective technological solutions.
+          My strengths lie in research, requirement gathering, analysis, and idea modeling. As a recent graduate, I am eager to participate <br> in any project that 
+          will allow me to elevate these skills to a new level.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="" style="max-width: 90%;">
+          </div>
+          <div class="col-lg-8 content">
+            <h2>Business Analyst</h2>
+            <p class="fst-italic py-3">
+              "I find that the harder I work, the more luck I seem to have" | <b>Thomas Jefferson </b>
+              
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>14 May 2003</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>TBA</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+84 905 103 596</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ho Chi Minh City, Viet Nam</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>MBTI Test:</strong> <span>ISTJ (Logistician)</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>21</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>thaodhy145@gmail.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>DOPE Personality Test:</strong> <span>Owl</span></li>
+                </ul>
+              </div>
+            </div>
+            <!-- <p class="py-3">
+              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
+              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
+            </p> -->
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="container section-title" style="padding-bottom: 0;">
+            <h2>My Highlights</h2>
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-journal-richtext"></i>
+              <h3 style="margin-left: 60px; font-size: 25px;line-height: 40px;"><strong>Research</strong></h3>
+              <p>Many scientific research topics were recognized & awarded. </p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-emoji-smile"></i>
+              <h3 style="margin-left: 60px; font-size: 25px;line-height: 40px;"><strong>Start-up</strong></h3>
+              <p>Co-founder of a technology startup project.</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-people"></i>
+              <h3 style="margin-left: 60px; font-size: 25px;line-height: 40px;"><strong>Leader</strong></h3>
+              <p>Led multiple university projects with significant impact.</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item">
+              <i class="bi bi-headset"></i>
+              <h3 style="margin-left: 60px; font-size: 25px;line-height: 40px;"><strong>Music</strong></h3>
+              <p>Music is my passion.</p>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section light-background">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Skills</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row skills-content skills-animation">
+
+          <div class="col-lg-6">
+
+            <div class="progress" style="font-size: 20px"> 
+              <span class="skill" style="padding-bottom:10px"><span>Technical Skills</span></span>
+              <ul >
+                <li style="font-size: 15px;"><b>Languages:</b> HTML, CSS, SQL</li> 
+                <li style="font-size: 15px;"><b>Frameworks and Tools:</b> Draw.io, Lucid Chart, Figma, Slack, Trello, Notion, VS Code, Visual Studio, SQL Server </li>
+              </ul>
+              <!-- <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div> -->
+            </div><!-- End Skills Item -->
+
+            <div class="progress" style="font-size: 20px"> 
+              <span class="skill" style="padding-bottom:10px"><span>Communication Skills</span></span>
+              <ul >
+                <li style="font-size: 15px;"><b>Languages:</b> English (TOEIC 695)</li> 
+                <!-- <li style="font-size: 15px;"><b>Frameworks and Tools:</b> Draw.io, Figma, Slack, Trello, Notion </li> -->
+              </ul>
+              <!-- <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div> -->
+            </div><!-- End Skills Item -->
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress-soft" style="font-size: 20px"> 
+              <span class="skill" style="padding-bottom:10px;" ><span>Soft Skills</span></span>
+              <ul style="line-height: 23px;">
+                <li style="font-size: 15px; "><b>Leadership:</b> +4 years of experience leading course projects and start-up competitions.</li>
+                <li style="font-size: 15px;"><b>Self-learning:</b> Maintain GPA above 3.6; Participate in many online courses.</li> 
+                <li style="font-size: 15px;"><b>Research and Analysis:</b> Have many topics recognized as scientific research works and won awards.</li> 
+                <li style="font-size: 15px;"><b>Time Management:</b> Ability to multitask and not miss the deadlines.</li>  
+                <li style="font-size: 15px;"><b>Adaptability and Responsibility:</b> Lead in many different project areas; Presented in front of a hall of more than 700 people.</li> 
+              
+               
+              </ul>
+              <!-- <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div> -->
+            </div><!-- End Skills Item -->
+          </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Education</h3>
+
+            <div class="resume-item pb-0">
+              <h4><a href="https://ueh.edu.vn/en/" target="_blank">University of Economics Ho Chi Minh City</a></h4>
+              <h5>Nov 2021 - Nov 2024</h5> <br>
+              <ul>
+                <li>Major: E-commerce</li>
+                <li>GPA: 3.85/4.0</li>
+                <li>  <p>Studied e-commerce has equipped me with comprehensive knowledge of online business and taught me how to build e-commerce websites with essential functions to meet user needs.</p></li>
+              </ul>
+            
+            </div><!-- Edn Resume Item -->
+
+            <h3 class="resume-title">Courses Attended</h3>
+             
+            <div class="resume-item">
+              <h4><a href="https://www.youtube.com/watch?v=lAw9XRGx72g&list=PLVxWzQv4q7dO99qnDAqm6ZdlO4zAVukKj" target="_blank">Business Analysis | Ngo Anh Tuan | R2S</a></h4>
+              <!-- <h5>2024</h5> -->
+               <p><em>Business Analysis Foundation Course for Beginners.</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4><a href="https://www.coursera.org/programs/vecom-x-ueh-3drdo/professional-certificates/google-ux-design?collectionId=JWMk9" target="_blank">Google UX Design Professional Certificate</a></h4>
+              <!-- <h5>2024 - Present</h5> -->
+               <p><em>Learned about UX concepts, principles, and processes for designing and executing projects using Figma.</em></p>
+            </div><!-- Edn Resume Item -->
+
+            
+            <div class="resume-item">
+              <h4><a href="https://www.udemy.com/course/agile-development-with-scrum-of-scrums-and-scrum-master/" target="_blank">Agile Development and Scrum Master</a></h4>
+              <!-- <h5>2024 - Present</h5> -->
+               <p><em>Learned about software development process with Agile method and Scrum framework.</em></p>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4><a href="https://skillshop.exceedlms.com/student/collection/648385-digital-marketing" target="_blank">Fundamentals of digital marketing</a></h4>
+              <p><em>Learned the basics of digital marketing and techniques to enhance brand awareness.</em></p>
+
+              
+              <!-- <h5>2024 - Present</h5> -->
+            </div><!-- Edn Resume Item -->
+<!-- 
+            <div class="resume-item">
+              <h4>Bachelor of Fine Arts &amp; Graphic Design</h4>
+              <h5>2010 - 2014</h5>
+              <p><em>Rochester Institute of Technology, Rochester, NY</em></p>
+              <p>Quia nobis sequi est occaecati aut. Repudiandae et iusto quae reiciendis et quis Eius vel ratione eius unde vitae rerum voluptates asperiores voluptatem Earum molestiae consequatur neque etlon sader mart dila</p>
+            </div>Edn Resume Item -->
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Experience</h3>
+            <div class="resume-item">
+              <h4>Business Analyst Intern</h4>
+              <h5>May 2024 - August 2024</h5>
+              <p><em><a href="https://uway.asia/" target="_blank">Uway Technology Company</a></em></p>
+              <ul>
+                <li>Analyzed business processes, workflows, and systems to identify improvement areas.</li>
+                <li>Collaborated with external stakeholders to gather and document business requirements.</li>
+                <li>Worked closely with Development and Design teams to ensure seamless project execution.</li>
+                <li>Monitored project progress, proactively addressing issues to ensure timely delivery.</li>
+                <li>Tested system functionality and interfaces to ensure system quality before customer demos.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Customer Success Freelancer</h4>
+              <h5>May 2023 - Sep 2023</h5>
+              <p><em><a href="https://fireapps.io/" target="_blank">FireApps JSC</a></em></p>
+              <ul>
+                <li>Engaged with customers on the Shopify platform via CRM, specializing in dropshipping.</li>
+                <li>Guided customers in application setup, address technical issues, and provided upselling and cross-selling consultations.</li>
+                <li>Collaborated closely with Customer Support and Technical Support team to ensure a seamless customer experience.</li>
+                <li>Gained expertise in business operations and sales strategies by resolving customer issues and managing various situations.</li>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section light-background" style="padding-bottom:30px">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Portfolio</h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+
+          <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">System Analysis</li>
+            <li data-filter=".filter-product">Development</li>
+            <li data-filter=".filter-branding">Research</li>
+            <li data-filter=".filter-books">Start-up</li>
+          </ul><!-- End Portfolio Filters -->
+
+          <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/litah.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>System Analysis 1</h4>
+                  <p>University Project</p>
+                  <a href="assets/img/portfolio/litah.png" title="System Analysis 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-litah.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/retrodx.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Development 1</h4>
+                  <p>University Project</p>
+                  <a href="assets/img/portfolio/retrodx.png" title="Development 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-retrodx.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/dt1.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Research 1</h4>
+                  <p>University Project</p>
+                  <a href="assets/img/portfolio/dt1.png" title="Research 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-dt1.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/edubin.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Start-up 1</h4>
+                  <p>Personal Project</p>
+                  <a href="assets/img/portfolio/edubin.png" title="Start-up 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-edubin.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/epayment.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>System Analysis 2</h4>
+                  <p>Company Project</p>
+                  <a href="assets/img/portfolio/epayment.png" title="System Analysis 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-tiki.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/kami.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Development 2</h4>
+                  <p>University Project</p>
+                  <a href="assets/img/portfolio/kami.png" title="Development 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-kami.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/dt3.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Research 2</h4>
+                  <p></p>
+                  <a href="assets/img/portfolio/dt3.png" title="Research 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-dt3.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-2.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-2.jpg" title="Branding 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/heya.png" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>System Analysis 3</h4>
+                  <p>Company Project</p>
+                  <a href="assets/img/portfolio/heya.png" title="System Analysis 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details-heya.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/product-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Product 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/product-3.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/branding-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Branding 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/branding-3.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+              <div class="portfolio-content h-100">
+                <img src="assets/img/portfolio/books-3.jpg" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Books 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="assets/img/portfolio/books-3.jpg" title="Branding 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div>End Portfolio Item -->
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Portfolio Section -->
+
+    <!-- Awards Section Start-->
+    <section id="awards" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Awards</h2>
+        <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="100" >
+            <!-- <div class="icon flex-shrink-0"><i> <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlM_WwnVntHzpYp1BxBIti4hr3_8bmq9zOBQ&s"></a></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://iic.hitu.edu.vn/Be-phong-khoi-nghiep-mua-2-2023-14-12-23-hitc" class="stretched-link">Champion I'mpossible 2023 - Startup Launcher.</a></h4>
+              <p class="description">I'mpossible is a project of The Dariu Foundation which is providing Entrepreneurship and Startups E-Course to
+                local students. This study program aims to equip young people with entrepreneurial knowledge and skills to turn
+                their innovations to real businesses.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://ueh.edu.vn/cuoc-song-ueh/tin-tuc/chung-ket-ueh-biztech-hackathon-2022-digital-solutions-for-climate-change-hanh-trinh-but-pha-cung-cong-nghe-59287?app=true&app=true" class="stretched-link">First Runner-up UEH BizTech Hackathon 2022</a></h4>
+              <p class="description">UEH Biztech Hackathon is a competition aims to apply new technology to solve real-life problems. With the 2022 theme "Digital Solutions for Climate Change," it encourages students to implement their knowledge practically, seeking sustainable solutions to combat global climate change.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://svvn.tienphong.vn/top-3-du-an-dat-giai-cao-nhat-tai-cuoc-thi-hanh-trinh-truong-thanh-2023-post1558242.tpo" class="stretched-link">Third Prize Community Reshaping Competition in 2023</a></h4>
+              <p class="description">Community Reshaping is an annual program by MAX Education with a core value of "Empowering young Vietnamese
+                individuals to grow and lead in making positive contributions to the community."
+                </p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="400">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-binoculars"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://nckhsinhvien.ueh.edu.vn/thong-bao/quyet-dinh-cong-bo-danh-sach-cac-sinh-vien-co-cong-trinh-nckh-dat-giai-thuong--nha-nghien-cuu-tre-ueh--nam-2024-50020" class="stretched-link">C Prize of the Young Researcher 2024 Competition – University of Economics Ho Chi Minh City</a></h4>
+              <p class="description">Academic competition on scientific research at school level, topic "Research on waste classification behavior of UEH University students and proposal of UEH Green Channel to encourage sustainable actions in the community".</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="500">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-brightness-high"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://www.facebook.com/BIT.UEH/posts/pfbid027jW6WaNBPLVeEnN4SAcFuGepikrfbKorA9XT352F3NBeWhS2qky7aMnwng7FnPSRl" class="stretched-link">Student of 5 Merits of Business Information Technology Department, UEH University</a></h4>
+              <p class="description">The prize includes 5 skills: good study, good integration, good physical strength, good morality, good
+                volunteering.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://www.facebook.com/gbabusinesschallenge/videos/1527312088099080" class="stretched-link">Top 5 GBA Bussiness Challenge 2023 – Season IV</a></h4>
+              <p class="description">The GBA Business Challenge is an effort of the GBA to create and support new start-ups, which later can create
+                jobs and income and contribute to Vietnam's economic development in the long term.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://csb.hub.edu.vn/tin-tuc-su-kien/hat-giong-cho-tuong-lai-seeds-for-the-future-2023-cung-huawei-104455.html" class="stretched-link">Top 25 Students Participating in the Huawei Seeds for the Future 2023 program</a></h4>
+              <p class="description">Seeds for the Future is an annual CSR program by Huawei, initiated in 2008 with the aim of enhancing
+                understanding of ICT such as 5G, Cloud Computing, AI, and Digital Power,...</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="600">
+            <!-- <div class="icon flex-shrink-0"><i class="bi bi-calendar4-week"></i></div> -->
+            <div>
+              <h4 class="title"><a href="https://fpt.vn/vi/tin-fpt/top100-si-tu-tre-cua-fpt-telecom-nextgen-leaders-chinh-thuc-co-mat-tai-fcamp--9764.html" class="stretched-link">Top 50 Southern Excellent Students in the FPT Telecom Next Gen Leaders 2024 program</a></h4>
+              <p class="description">FPT Telecom Next Gen Leaders is a program designed to identify and train young Gen Z talents, helping them break through limits, assert themselves, and advance their careers to become future leaders and managers at FPT Telecom.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Awards Section End-->
+
+        <!-- Activities Section -->
+        <section id="activities" class="services section" style="background-color:#f4fafd;" >
+
+          <!-- Section Title -->
+          <div class="container section-title" data-aos="fade-up" style="background-color:#f4fafd;"  >
+            <h2 style="background-color:#f4fafd;" >Activities</h2>
+            <!-- <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p> -->
+          </div><!-- End Section Title -->
+    
+          <div class="container">
+    
+            <div class="row gy-4">
+    
+              <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+                <div>
+                  <h4 class="title">Volunteer for the 2023 Mid-Autumn Festival Program, Faculty of Economics, UEH University</h4>
+                  <p class="description">
+                    The Student Economics Volunteer Campaign aims to bring a meaningful Mid-Autumn Festival to children. The 2023 event was held at a primary school in Mang Thit District, Vinh Long Province.</p>
+                </div>
+              </div>
+              <!-- End Service Item -->
+    
+              <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+                <div>
+                  <h4 class="title">Volunteer for the 2023 Shelter of Love program, Social Work Team, UEH University</h4>
+                  <p class="description">
+                    The program organized a visit to the Go Vap Children's Protection Center, where volunteers distributed gifts and engaged in play activities with the children.
+                  </p>
+                </div>
+              </div><!-- End Service Item -->
+    
+              <div class="col-lg-12 col-md-12 service-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <div class="icon flex-shrink-0"><i class="bi bi-bar-chart"></i></div>
+                <div>
+                  <h4 class="title">
+                    Runner participated in the District 1 Midnight Run 2024, completing a 5km distance.</h4>
+                  <p class="description">
+
+The District 1 Midnight Run 2023 is a sports event organized by the District 1 People's Committee, Ben Thanh Culture JSC, and Nexus Media JSC. This event marks District 1's strong post-Covid return, highlighting its resilience and adaptability.
+                  </p>
+                </div>
+              </div><!-- End Service Item -->
+    
+        
+    
+            </div>
+    
+          </div>
+    
+        </section><!-- /Activities Section -->
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section light-background" style="background-color:#ffff;">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Testimonials</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 40
+                },
+                "1200": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 1
+                }
+              }
+            }
+          </script>
+
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Tôi sẽ kể về lần làm đồ án môn phát triển ứng dụng. Chúng tôi cần xây dựng một website bán hàng Thương...
+                    <button onclick="showPopup('popup1')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-7.jpg" class="testimonial-img" alt="">
+                <h3>Nguyễn Phương Thảo</h3>
+                <h4>Classmate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Lần tui ấn tượng nhất là trong môn QTCLTMĐT (Quản trị chiến lược Thương mại điện tử), là lần đầu tiên tớ làm...<br>
+                    <button onclick="showPopup('popup2')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-2.jpg" class="testimonial-img" alt="">
+                <h3>Thanh Thảo</h3>
+                <h4>Classmate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Trong công việc, Thảo đóng góp ý kiến để có được kết quả tốt nhất. Tuy nhiên trong giao tiếp ngoại giao bên...<br>
+                    <button onclick="showPopup('popup3')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-3.jpg" class="testimonial-img" alt="">
+                <h3>Hồng Hạnh</h3>
+                <h4>Classmate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Khi làm member, Thảo cũng chăm đóng góp, đề xuất ý tưởng; hoàn thành tốt đến xuất sắc công việc được giao...<br>
+                    <button onclick="showPopup('popup4')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-4.jpg" class="testimonial-img" alt="">
+                <h3>Ngọc Mai</h3>
+                <h4>Classmate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Mặc dù chưa có cơ hội chung nhóm khi Thảo làm leader nhưng theo những các bạn cùng nhóm nhận xét...
+                    <button onclick="showPopup('popup5')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-5.jpg" class="testimonial-img" alt="">
+                <h3>Anonymous</h3>
+                <h4>Project Teammate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Thảo làm leader môn Phát triển ứng dụng Thương mại điện tử rất toàn vẹn và tâm huyết. Là một thành viên...
+                    <button onclick="showPopup('popup6')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-6.jpg" class="testimonial-img" alt="">
+                <h3>Hoàng Sơn</h3>
+                <h4>Project Teammate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p>
+                  <i class="bi bi-quote quote-icon-left"></i>
+                  <span>Không nhớ là trước đó có làm bài tập nhỏ cùng nhau chưa. Nhưng lần hợp tác cho môn học cuối cùng này...
+                    <button onclick="showPopup('popup6')">See More</button>
+                  </span>
+                  <i class="bi bi-quote quote-icon-right"></i>
+                </p>
+                <img src="assets/img/testimonials/tes-1.jpg" class="testimonial-img" alt="">
+                <h3>Minh Thư</h3>
+                <h4>Classmate</h4>
+              </div>
+            </div><!-- End testimonial item -->
+          </div>
+
+          <!-- Popup element for the first testimonial -->
+          <div id="popup1" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup1')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+              <p>Tôi sẽ kể về lần làm đồ án môn phát triển ứng dụng. Chúng tôi cần xây dựng một website bán hàng Thương mại điện tử. Những yêu cầu của giảng viên bộ môn rất nhiều và khó khăn (khoảng 10 trang docs), đồng thời thầy cũng đảm bảo mọi người trong nhóm đều phải có sự đóng góp. Thảo đã nghiên cứu những yêu cầu của thầy từ rất sớm, có vấn đề sẽ liên hệ với thầy ngay lập tức để được giải đáp (và buổi họp đầu tiên, chúng tôi có những thắc mắc này thì đều nhận được câu trả lời chắc chắn). Thảo đã xác định hướng đi (xây trang web theo cách nào, sử dụng phần mềm code nào,...) và việc của chúng tôi là làm tốt phần nhiệm vụ được giao. Đây là môn phát triển ứng dụng, nên chúng tôi được học về cách chỉnh sửa trang web và đúng là phần việc được giao hoàn toàn phù hợp với chương trình học. Những phần ngoài như pull code, push code, domain,... hoàn toàn do Thảo thực hiện (và Thảo cũng có phần việc xây web nữa). Vì thế, chúng tôi có nhiều thời gian để tập trung phát triển trang web của chúng tôi hơn. Chúng tôi tìm hiểu được rất nhiều cách phát triển web và Thảo sẽ là người quyết định điều gì phù hợp nhất. Đồng thời Thảo luôn động viên các thành viên, thực sự, Thảo rất biết cách truyền lửa vì trong những môn do Thảo đảm nhận làm leader mọi người hầu như tập trung cao độ hơn, ưu tiên làm môn này hơn và luôn cố gắng làm tốt nhất có thể. Thêm một câu chuyện nhỏ là trong lúc thuyết trình thầy có yêu cầu hãy sửa code theo yêu cầu, có 2 câu cơ bản và 1 câu nâng cao. Tôi mong muốn đc làm câu nâng cao để thể hiện bản thân nhưng Thảo đã yêu cầu ưu tiên 2 câu cơ bản. Và thực sự hết thgian chúng tôi chỉ hoàn thành xong 2 câu cơ bản, nếu lúc đó tôi mất thgian vào câu nâng cao thì có lẽ phần điểm này nhóm tôi sẽ không có được. Và có một điều khiến tôi rất vui, đó là trong những buổi học đầu, giảng viên có nhắc đến vấn đề nhóm nào xung phong thuyết trình sẽ có điểm cộng, chúng tôi hầu như bỏ qua và quên mất điều này nhưng Thảo đã ghi nhớ, gửi mail và trao đổi với thầy, nhóm chúng tôi là nhóm duy nhất thuyết trình lấy điểm cộng. Và cũng vì thế, bài đồ án của chúng tôi được điểm cao nhất lớp, đồng thời được thầy sử dụng làm mẫu cho lớp học sau. Tôi biết một thành tựu không thể chỉ do 1 người nhưng Thảo xứng đáng được tuyên dương nhất vì cách quản lí, cách làm việc chuyên nghiệp hiệu quả của bạn cho dù đây là lần làm việc đầu tiên với một số thành viên trong  nhóm.
+              </p>
+              <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+              <p>Tôi cảm thấy Thảo là một người làm việc rất có quy tắc, chỉn chu đồng thời cũng có kiến thức tốt trong phần kiến thức liên quan đến đồ án. Thảo luôn là người research nhiều nhất để giải đáp tất cả các câu hỏi của thành viên và có một cái nhìn tổng quan để đồ án đạt được hiệu quả tốt nhất. Chúng tôi đã làm việc cùng nhau nhiều lần, nhưng chỉ cần qua lần làm việc thứ 2, Thảo đã có thể xác định được đúng điểm mạnh - điểm yếu của các thành viên và phân công công việc phù hợp. Đặc biệt, với vai trò leader, Thảo luôn lựa chọn những đề tài mang tính thử thách, có độ khó nhất định khiến tôi cảm thấy trải nghiệm của mình ở môn học này có giá trị hơn rất nhiều. Tôi rất thích làm việc trong nhóm có Thảo đảm nhận vai trò leader vì mọi thứ được chuẩn bị tốt, Thảo luôn lắng nghe ý kiến của mọi người và lựa chọn điều tốt nhất, tôi chưa từng thấy một tình huống bảo thủ nào xảy ra. Chúng tôi làm việc với nhau rất tốt và kết quả đem lại thực sự là hơn cả mong đợi.</p>
+              <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+              <p>
+                Thảo luôn là một trong những thành viên đóng góp ý kiến có giá trị nhất. Tôi rất thích cách bạn đưa ra những ý tưởng, không bao giờ là ý tưởng bốc đồng, luôn được chuẩn bị kĩ và phân tích về mặt tốt - xấu để chúng tôi có thể dễ đưa ra quyết định. Và nhờ sự chuẩn bị tốt đó, đa phần ý kiến của  Thảo đều sẽ nhận được sự đồng tình từ mọi người. Đặc biệt tôi rất tin tưởng giao cho Thảo những phần việc quan trọng trong bài, vì tôi chắc chắn Thảo sẽ có thể làm tốt nó. Với vai trò là một nhóm trưởng, nếu có Thảo trong nhóm tôi cảm thấy như có thêm một cố vấn hoàn hảo về mọi mặt. 
+              </p>
+              <h5>4. Nhận xét Ưu điểm</h5>
+              <p>Chỉn chu, nghiêm túc, có trách nhiệm, có năng lực, ham học hỏi, ham tìm hiểu, gọn gàng, ngăn nắp, cầu toàn, vô cùng chăm chỉ, năng suất, có tham vọng. </p>
+              <h5>5. Nhận xét nhược điểm</h5>
+              <p>Bạn có vẻ trầm tính những thực sự những lời bạn nói ra đều là những kết quả từ sự suy nghĩ thấu đáo. </p>
+            </div>
+          </div>
+
+          <!-- Popup element for the second testimonial -->
+          <div id="popup2" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup2')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+            <p>Lần tui ấn tượng nhất là trong môn QTCLTMĐT (Quản trị Chiến lược Thương mại điện tử), là lần đầu tiên tớ làm leader trong những năm đại học, nhưng nhờ có sự giúp đỡ của Thảo mà tớ thấy, việc làm lead thì ra cũng k phải đáng sợ đến vậy, Thảo đã giúp tớ rất nhiều và cũng là người truyền cảm hứng và động lực trong học tập cho tớ.</p>
+              <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+            <p>Là leader của những leader</p>
+              <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+            <p>Nếu là member thì cũng là 1 member rất xuất sắc, dù đôi lúc có cúp nhưng mà vẫn luôn đảm bảo hiệu quả của công việc và học tập, dự án. Thảo cũng chủ động trong việc đưa ra những ý kiến mới.</p>
+              <h5>4. Nhận xét Ưu điểm</h5>
+            <p>Sự nhiệt tình, dù ít nói nhưng thật ra vẫn rất quan tâm.</p>
+              <h5>5. Nhận xét nhược điểm</h5>
+            <p>Dữ lên nha bà.</p>
+
+
+            </div>
+          </div>
+
+          <div id="popup3" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup3')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+              <p>Thảo làm việc chuyên nghiệp, làm hết sức mình, đem lại hiệu quả cao.</p>  
+              <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+              <p>Truyền đạt, lên kế hoạch rõ ràng, chi tiết cho tất cả thành viên trong nhóm. Nắm được điểm mạnh, điểm yếu từng người.</p>
+              <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+              <p>Chủ động trong các hoạt động, đóng góp ý kiến, làm bài mang lại hiệu quả cao.</p>
+              <h5>4. Nhận xét Ưu điểm</h5>
+              <p>Giỏi toàn diện. Hoàn thành mọi việc đạt kết quả cao, hiệu quả.</p>
+              <h5>5. Nhận xét nhược điểm</h5>
+              <p>Trong công việc, Thảo đóng góp ý kiến để có được kết quả tốt nhất. Tuy nhiên trong giao tiếp ngoại giao bên ngoài, Thảo hơi ít nói. Mong muốn Thảo nói nhiều hơn, chia sẻ nhiều hơn với bạn bè.</p>
+              </p>
+            </div>
+          </div>
+
+          <div id="popup4" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup4')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+              <p>Thảo làm leader rất chuyên nghiệp, phân công công việc rõ ràng, thời gian deadline cụ thể, còn gắn nội dung tham khảo chất lượng nữa.</p>
+                <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+              <p>Chuyên nghiệp, động viên bạn cùng nhóm, biết lắng nghe đóng góp, thái độ rất tốt.</p>
+                <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+              <p>Khi làm member, Thảo cũng chăm đóng góp, đề xuất ý tưởng; hoàn thành tốt đến xuất sắc công việc được giao, cảm giác rất yên tâm.</p>
+                <h5>4. Nhận xét Ưu điểm</h5>
+              <p>Thông minh, chăm chỉ, luôn cố gắng hết sức, không bỏ cuộc, có tầm nhìn xa. </p>
+                <h5>5. Nhận xét nhược điểm</h5>
+              <p>Ăn nhiều lên =)) nếu có thể thì luyện thêm karaoke và vài điệu nhảy nữa.</p>
+            </div>
+          </div>
+
+          <div id="popup5" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup5')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+              <p>Mình đã từng làm việc nhóm với Thảo trong  1 môn học ở kỳ này. Mình cảm thấy rất vui và tin tưởng khi có Thảo trong nhóm.</p>
+                <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+              <p>Mặc dù chưa có cơ hội chung nhóm khi Thảo làm leader nhưng theo những các bạn cùng nhóm nhận xét cũng như trải nghiệm thực tế của mình khi cùng làm member trong nhóm thì mình thấy Thảo là 1 leader rất có trách nhiệm, phân chia công việc rõ ràng, chi tiết và phù hợp năng lực của từng thành viên. Thảo cũng rất thoải mái để mọi người chia sẻ các ý tưởng của mình trong các buổi họp, luôn hòa đồng, giúp đỡ nếu teammate gặp khó khăn trong quá trình làm bài.</p>
+                <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+              <p>Thảo rất chủ động đóng góp các ý kiến trong các buổi họp. Các đề xuất của Thảo giúp bài nhóm hoàn thiện hơn rất nhiều. Thảo rất có trách nhiệm đối với bất kỳ công việc nào được leader giao. Thảo cũng rất hòa đồng, thân thiện với các bạn member khác. </p>
+                <h5>4. Nhận xét Ưu điểm</h5>
+              <p>Tinh thần trách nhiệm, nỗ lực cố gắng 
+                Chủ động, tinh thần học hỏi rất cao
+                Tự tin, hòa đồng với bạn bè</p>
+                <h5>5. Nhận xét nhược điểm</h5>
+              <p>Khum có gì để chê. Thi thoảng hơi nhiệt tình quá làm bạn sợ.</p>
+            </div>
+          </div>
+
+          <div id="popup6" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup6')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+              <p>Thảo làm leader môn Phát triển ứng dụng Thương mại điện tử rất toàn vẹn và tâm huyết. Là một thành viên trong nhóm, mình cảm thấy những công việc được Thảo hướng dẫn thực hiện rất kĩ càng và dễ hiểu, dễ thực hiện.</p>
+                <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+            <p>Rất tốt</p>
+                <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+             <p>N/A</p>
+                <h5>4. Nhận xét Ưu điểm</h5>
+              <p>Khả năng lãnh đạo tốt, làm việc tốt.</p>
+                <h5>5. Nhận xét nhược điểm</h5>
+              <p>Không biết.</p>
+            </div>
+          </div>
+          
+          <div id="popup7" class="popup">
+            <div class="popup-content">
+              <span class="close" onclick="closePopup('popup7')">&times;</span>
+              <h5>1. Review/Feedback về 1 trong những lần bạn làm việc nhóm cùng Thảo</b></h5>
+              <p>Không nhớ là trước đó có làm bài tập nhỏ cùng nhau chưa. Nhưng lần hợp tác cho môn học cuối cùng này rất tuyệt vời ă.</p>
+                <h5>2. Theo cảm nhận, với vai trò Leader, Thảo làm việc như thế nào?</h5>
+            <p>Rất chu đáo, rõ ràng, phân chia task cho từng thành viên theo đúng sở trường.t</p>
+                <h5>3. Theo cảm nhận, với vai trò Member, Thảo là người như thế nào?</h5>
+             <p>N/A</p>
+                <h5>4. Nhận xét Ưu điểm</h5>
+              <p>Có tính kỷ luật cao. Quản lý thời gian tốt,...</p>
+                <h5>5. Nhận xét nhược điểm</h5>
+              <p>Tui chưa thấy được nhược điểm.</p>
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Testimonials Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+        <!-- <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p> -->
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-5">
+
+
+            <div class="info-wrap">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+                <i class="bi bi-envelope flex-shrink-0"></i>
+                <div>
+                  <h3>Email</h3>
+                  <p>thaodhy145@gmail.com</p>
+                </div>
+              </div><!-- End Info Item -->
+  
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-telephone flex-shrink-0"></i>
+                <div>
+                  <h3>Phone</h3>
+                  <p>+84 905 103 596</p>
+                </div>
+              </div><!-- End Info Item -->
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-geo-alt flex-shrink-0"></i>
+                <div>
+                  <h3>Address</h3>
+                  <p>Distric 5, Ho Chi Minh City</p>
+                </div>
+              </div><!-- End Info Item -->
+              <br>
+              <br>
+              
+              <iframe width=100% height="300px"  src="https://www.youtube.com/embed/TXZGz2JaZw0" title="đừng về trễ - SƠN TÙNG MTP | rnb version" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<br>
+
+            </div>
+          </div>
+          <div class="col-lg-7">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdbFKS-_9e8hZHP4I2HJOWfibEENyD7HYBMU42PUhG2e1C26A/viewform?embedded=true" width="640" height="697" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <br>
+            <br>
+            <br>
+            <br>
+</div>
+
+
+          <!-- Form PHP -->
+          <!-- <div class="col-lg-7">
+            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label for="name-field" class="pb-2">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="email-field" class="pb-2">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="subject-field" class="pb-2">Subject</label>
+                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                </div>
+
+                <div class="col-md-12">
+                  <label for="message-field" class="pb-2">Message</label>
+                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+
+                  <button type="submit">Send Message</button>
+                </div>
+
+              </div>
+            </form>
+            
+          </div> -->
+          <!-- End Contact Form -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer position-relative light-background">
+
+    <div class="container"> 
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">iPortfolio</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you've purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
